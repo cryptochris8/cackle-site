@@ -61,7 +61,7 @@ export const moods: { emoji: string; name: string; line: string }[] = [
   { emoji: "😢", name: "Sad", line: "Cue the tiny violin and the dramatic narrator." },
   { emoji: "😄", name: "Happy", line: "Pure hype. Certified main-character energy." },
   { emoji: "😡", name: "Mad", line: "Petty, savage, strongly-worded-text energy." },
-  { emoji: "🎲", name: "Auto", line: "Can't choose? Auto reads the room and picks for you — free." },
+  { emoji: "🎲", name: "Auto", line: "Can't choose? Auto reads your photo and picks the mood — free." },
 ];
 
 export const clips: { src: string; label: string; tone: "teal" | "gold" }[] = [

@@ -5,6 +5,7 @@ import { Sparkle } from "@/components/Sparkle";
 import { StepCard } from "@/components/StepCard";
 import { MoodCard } from "@/components/MoodCard";
 import { ClipCard } from "@/components/ClipCard";
+import { Clip } from "@/components/Clip";
 import { IconApple, IconArrow } from "@/components/icons";
 
 export default function HomePage() {
@@ -52,20 +53,11 @@ export default function HomePage() {
             </div>
           </Reveal>
 
-          <Reveal delay={120} className="hidden justify-self-center lg:block">
+          <Reveal delay={120} className="justify-self-center">
             <div className="relative animate-float">
               <div className="absolute -inset-6 rounded-[2.6rem] bg-peak-teal/10 blur-3xl" />
-              <div className="relative w-[262px] overflow-hidden rounded-[2rem] border border-white/10 bg-forest-900 shadow-card">
-                {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
-                <video
-                  className="aspect-[9/16] w-full object-cover"
-                  src="/clips/cackle_funny.mp4"
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                  preload="metadata"
-                />
+              <div className="relative w-[230px] overflow-hidden rounded-[2rem] border border-white/10 bg-forest-900 shadow-card sm:w-[262px]">
+                <Clip src="/clips/cackle_funny.mp4" className="aspect-[9/16] w-full object-cover" />
               </div>
             </div>
           </Reveal>
@@ -159,16 +151,7 @@ export default function HomePage() {
                 <div className="relative animate-float">
                   <div className="absolute -inset-5 rounded-[2.2rem] bg-peak-teal/10 blur-3xl" />
                   <div className="relative w-[210px] overflow-hidden rounded-[1.8rem] border border-peak-teal/25 bg-forest-900 shadow-teal">
-                    {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
-                    <video
-                      className="aspect-[9/16] w-full object-cover"
-                      src="/clips/cackle_happy.mp4"
-                      autoPlay
-                      muted
-                      loop
-                      playsInline
-                      preload="metadata"
-                    />
+                    <Clip src="/clips/cackle_happy.mp4" className="aspect-[9/16] w-full object-cover" />
                   </div>
                 </div>
               </div>

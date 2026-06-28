@@ -73,7 +73,7 @@ export function Footer() {
         <FooterCol title="Explore" items={nav} />
 
         <div>
-          <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-cream/45">
+          <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-cream/55">
             Company
           </h3>
           <ul className="mt-4 space-y-2.5 text-sm">
@@ -91,7 +91,7 @@ export function Footer() {
         </div>
 
         <div>
-          <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-cream/45">
+          <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-cream/55">
             Get updates
           </h3>
           <p className="mt-4 text-sm text-cream/60">
@@ -127,7 +127,7 @@ export function Footer() {
       </div>
 
       <div className="border-t border-white/10">
-        <div className="shell flex flex-col items-center justify-between gap-2 py-6 text-xs text-cream/45 sm:flex-row">
+        <div className="shell flex flex-col items-center justify-between gap-2 py-6 text-xs text-cream/55 sm:flex-row">
           <p>
             © {year} {site.name} · a brand of Athlete Domains LLC
           </p>
@@ -149,7 +149,7 @@ function FooterCol({
 }) {
   return (
     <div>
-      <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-cream/45">
+      <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-cream/55">
         {title}
       </h3>
       <ul className="mt-4 space-y-2.5 text-sm">
