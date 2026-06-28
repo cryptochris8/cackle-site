@@ -1,0 +1,11 @@
+# Netlify build config for the Cackle website.
+# The site lives in the `website/` subfolder, so `base` points Netlify there.
+# Connect this repo in Netlify and it "just works" — no manual base/publish setup.
+
+[build]
+  base = "website"
+  command = "npm run build"
+  publish = "out"
+
+[build.environment]
+  NODE_VERSION = "20"
