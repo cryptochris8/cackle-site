@@ -30,6 +30,7 @@ export const nav = [
   { label: "How it works", href: "/#how" },
   { label: "Moods", href: "/#moods" },
   { label: "Genius", href: "/#genius" },
+  { label: "Story", href: "/#story" },
   { label: "Clips", href: "/#clips" },
 ];
 
@@ -73,3 +74,14 @@ export const clips: { src: string; label: string; tone: "teal" | "gold" }[] = [
 
 // The viral verb-loop hook carried by every shared clip.
 export const shareHook = "You just got Cackled — make your own in the Cackle app.";
+
+// The founder's origin story — the forgotten-coffee "aha" moment.
+export const origin = {
+  title: "Born from a forgotten cup of coffee",
+  paragraphs: [
+    "Every morning I get up early to make my fiancée her coffee. Then she changed jobs and started leaving before sunrise — and some mornings she'd forget it, leaving a full, untouched cup sitting on the counter.",
+    "Here's the thing: I don't even drink coffee. But one morning I looked at that lonely full cup, snapped a photo of it, and thought — man, I wish I could turn this into a funny little clip, with a caption and some music, and send it to her.",
+    "That was the aha moment. Cackle was born from a forgotten cup of coffee. ☕",
+  ],
+  attribution: "— Chris, founder of Cackle",
+};

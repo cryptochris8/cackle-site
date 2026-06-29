@@ -1,4 +1,4 @@
-import { clips, links, moods, shareHook, site, steps } from "@/lib/site";
+import { clips, links, moods, origin, shareHook, site, steps } from "@/lib/site";
 import { CTA, Pill, SectionHeading } from "@/components/ui";
 import { Reveal } from "@/components/Reveal";
 import { Sparkle } from "@/components/Sparkle";
@@ -178,6 +178,27 @@ export default function HomePage() {
               <ClipCard key={c.src} {...c} />
             ))}
             <div className="shrink-0 pr-1" />
+          </div>
+        </Reveal>
+      </section>
+
+      {/* ── Origin story ── */}
+      <section id="story" className="shell py-20 sm:py-24">
+        <Reveal>
+          <div className="mx-auto max-w-2xl text-center">
+            <span className="eyebrow">
+              <Sparkle size={14} />
+              How it started
+            </span>
+            <h2 className="heading-gradient heading-glow mt-4 text-balance text-3xl font-bold sm:text-4xl">
+              {origin.title}
+            </h2>
+            <div className="mt-6 space-y-4 text-left text-lg leading-relaxed text-cream/75 sm:text-center">
+              {origin.paragraphs.map((p) => (
+                <p key={p}>{p}</p>
+              ))}
+            </div>
+            <p className="mt-6 text-sm font-semibold text-cream/60">{origin.attribution}</p>
           </div>
         </Reveal>
       </section>
