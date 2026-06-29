@@ -52,7 +52,7 @@ export const steps: { title: string; icon: IconName; blurb: string }[] = [
     title: "Send the laugh",
     icon: "share",
     blurb:
-      "Out comes a short video clip. Share it in a tap — and they'll want to make one back.",
+      "Out comes a short clip. Tap “Cackle it” and it's off to your friends — who'll want to send one back.",
   },
 ];
 

@@ -199,8 +199,8 @@ export default function HomePage() {
                 Every clip recruits the next laugh
               </h2>
               <p className="mt-4 text-lg leading-relaxed text-cream/75">
-                “{shareHook}” Send a Cackle and your friends won&apos;t just
-                laugh — they&apos;ll want to fire one right back.
+                “{shareHook}” Hit “Cackle it” to send your clip in a tap — and your
+                friends won&apos;t just laugh, they&apos;ll want to fire one right back.
               </p>
               <div className="mt-8 flex justify-center">
                 <CTA href={links.appStore} variant="gold">
