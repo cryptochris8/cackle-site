@@ -184,8 +184,8 @@ export default function HomePage() {
 
       {/* ── Origin story ── */}
       <section id="story" className="shell py-20 sm:py-24">
-        <Reveal>
-          <div className="mx-auto max-w-2xl text-center">
+        <div className="grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr]">
+          <Reveal>
             <span className="eyebrow">
               <Sparkle size={14} />
               How it started
@@ -193,14 +193,24 @@ export default function HomePage() {
             <h2 className="heading-gradient heading-glow mt-4 text-balance text-3xl font-bold sm:text-4xl">
               {origin.title}
             </h2>
-            <div className="mt-6 space-y-4 text-left text-lg leading-relaxed text-cream/75 sm:text-center">
+            <div className="mt-6 space-y-4 text-lg leading-relaxed text-cream/75">
               {origin.paragraphs.map((p) => (
                 <p key={p}>{p}</p>
               ))}
             </div>
             <p className="mt-6 text-sm font-semibold text-cream/60">{origin.attribution}</p>
-          </div>
-        </Reveal>
+          </Reveal>
+
+          <Reveal delay={120} className="justify-self-center">
+            <div className="relative animate-float">
+              <div className="absolute -inset-5 rounded-[2.4rem] bg-gold/10 blur-3xl" />
+              <div className="relative w-[230px] overflow-hidden rounded-[2rem] border border-white/10 bg-forest-900 shadow-card sm:w-[248px]">
+                <Clip src="/clips/cackle_origin.mp4" className="aspect-[9/16] w-full object-cover" />
+              </div>
+              <p className="mt-3 text-center text-xs font-medium text-cream/60">The very first Cackle ☕</p>
+            </div>
+          </Reveal>
+        </div>
       </section>
 
       {/* ── Share loop ── */}
