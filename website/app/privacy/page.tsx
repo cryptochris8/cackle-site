@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description: "How Cackle handles your photos and data.",
 };
 
-const updated = "June 28, 2026";
+const updated = "June 30, 2026";
 
 export default function PrivacyPage() {
   return (
@@ -22,9 +22,10 @@ export default function PrivacyPage() {
           Cackle turns your photos into funny video clips. The free moods run
           entirely <strong>on your device</strong> — those photos never leave your
           phone. The optional <strong>Genius</strong> feature sends a small,
-          downscaled copy of the photo to our AI service to write a caption and
-          voiceover, then discards it. We don&apos;t sell your data, and you
-          don&apos;t need an account to use the app.
+          downscaled copy of the photo to third-party AI services (
+          <strong>Anthropic</strong> and <strong>ElevenLabs</strong>) to write a
+          caption and voiceover, then discards it. We don&apos;t sell your data, and
+          you don&apos;t need an account to use the app.
         </Section>
 
         <Section title="Photos you choose">
@@ -35,12 +36,14 @@ export default function PrivacyPage() {
 
         <Section title="Genius (the AI feature)">
           When you tap <strong>Genius</strong>, Cackle sends a downscaled copy of
-          that one photo to our backend, which uses a third-party AI provider to
-          (1) generate a caption describing the image and (2) synthesize a short
-          character voiceover of that caption. The image is used only to produce
-          your clip — it is not stored after processing and is not used to train
-          AI models. Because the photo leaves your device for this feature, Genius
-          is clearly labeled and is your choice to use.
+          that one photo to our backend, which passes it to third-party AI services
+          — <strong>Anthropic</strong> to generate a caption describing the image,
+          and <strong>ElevenLabs</strong> to synthesize a short character voiceover
+          of that caption. The image is used only to produce your clip: it is
+          processed and then discarded — not stored after processing, and not used
+          to train AI models. Because the photo leaves your device for this feature,
+          Genius is clearly labeled, asks for your consent the first time you use it,
+          and is always your choice. The other moods send nothing off your device.
         </Section>
 
         <Section title="What we don't do">
@@ -51,9 +54,10 @@ export default function PrivacyPage() {
         </Section>
 
         <Section title="Analytics & diagnostics">
-          We may use standard, privacy-respecting analytics and crash reporting to
-          understand how the app is used and to fix bugs. This data is aggregated
-          and not used to identify you personally.
+          We don&apos;t currently use third-party analytics or crash-reporting SDKs,
+          and the app collects no usage or diagnostics data about you. If we ever add
+          privacy-respecting analytics, we&apos;ll update this policy and our App Store
+          privacy details first.
         </Section>
 
         <Section title="Children">
