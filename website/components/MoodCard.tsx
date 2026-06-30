@@ -2,11 +2,13 @@ export function MoodCard({
   emoji,
   name,
   line,
+  sticker,
   flagship = false,
 }: {
   emoji: string;
   name: string;
   line: string;
+  sticker?: string;
   flagship?: boolean;
 }) {
   return (
@@ -15,9 +17,16 @@ export function MoodCard({
         flagship ? "border-peak-teal/40 shadow-teal" : ""
       }`}
     >
-      <span className="text-3xl" aria-hidden>
-        {emoji}
-      </span>
+      {sticker ? (
+        <span className="inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-cream p-1.5 shadow-md">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={sticker} alt="" aria-hidden className="h-full w-full object-contain" />
+        </span>
+      ) : (
+        <span className="text-3xl" aria-hidden>
+          {emoji}
+        </span>
+      )}
       <h3 className="mt-3 font-display text-base font-bold">
         {name}
         {flagship && (

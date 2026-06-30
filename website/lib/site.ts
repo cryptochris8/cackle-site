@@ -57,11 +57,11 @@ export const steps: { title: string; icon: IconName; blurb: string }[] = [
   },
 ];
 
-export const moods: { emoji: string; name: string; line: string }[] = [
-  { emoji: "😂", name: "Funny", line: "A witty roast of the vibe, outfit, or moment." },
-  { emoji: "😢", name: "Sad", line: "Cue the tiny violin and the dramatic narrator." },
-  { emoji: "😄", name: "Happy", line: "Pure hype. Certified main-character energy." },
-  { emoji: "😡", name: "Mad", line: "Petty, savage, strongly-worded-text energy." },
+export const moods: { emoji: string; name: string; line: string; sticker?: string }[] = [
+  { emoji: "😂", name: "Funny", sticker: "/stickers/funny.svg", line: "A witty roast of the vibe, outfit, or moment." },
+  { emoji: "😢", name: "Sad", sticker: "/stickers/sad.svg", line: "Cue the tiny violin and the dramatic narrator." },
+  { emoji: "😄", name: "Happy", sticker: "/stickers/happy.svg", line: "Pure hype. Certified main-character energy." },
+  { emoji: "😡", name: "Mad", sticker: "/stickers/mad.svg", line: "Petty, savage, strongly-worded-text energy." },
   { emoji: "🎲", name: "Auto", line: "Can't choose? Auto reads your photo and picks the mood — free." },
 ];
 
