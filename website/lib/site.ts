@@ -30,6 +30,7 @@ export const nav = [
   { label: "How it works", href: "/#how" },
   { label: "Moods", href: "/#moods" },
   { label: "Genius", href: "/#genius" },
+  { label: "The app", href: "/#app" },
   { label: "Story", href: "/#story" },
   { label: "Clips", href: "/#clips" },
 ];
@@ -70,6 +71,14 @@ export const clips: { src: string; label: string; tone: "teal" | "gold" }[] = [
   { src: "/clips/cackle_happy.mp4", label: "😄 Happy", tone: "gold" },
   { src: "/clips/cackle_sad.mp4", label: "😢 Sad", tone: "teal" },
   { src: "/clips/cackle_mad.mp4", label: "😡 Mad", tone: "gold" },
+];
+
+// Real in-app screenshots for the "See the app" section (on-brand, v1.0.27).
+export const appShots: { src: string; caption: string }[] = [
+  { src: "/clips/IMG_6406.PNG", caption: "One tap from your home screen." },
+  { src: "/clips/IMG_6409.PNG", caption: "Your photo, roasted — caption + mood sticker." },
+  // Re-shoot the "Start with a photo" screen (now has the thumbs-up sticker) and add it:
+  // { src: "/clips/IMG_6407.PNG", caption: "Snap one or pick from your library." },
 ];
 
 // The viral verb-loop hook carried by every shared clip.

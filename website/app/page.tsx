@@ -1,10 +1,11 @@
-import { clips, links, moods, origin, shareHook, site, steps } from "@/lib/site";
+import { appShots, clips, links, moods, origin, shareHook, site, steps } from "@/lib/site";
 import { CTA, Pill, SectionHeading } from "@/components/ui";
 import { Reveal } from "@/components/Reveal";
 import { Sparkle } from "@/components/Sparkle";
 import { StepCard } from "@/components/StepCard";
 import { MoodCard } from "@/components/MoodCard";
 import { ClipCard } from "@/components/ClipCard";
+import { AppShot } from "@/components/AppShot";
 import { Clip } from "@/components/Clip";
 import { IconApple, IconArrow } from "@/components/icons";
 
@@ -158,6 +159,24 @@ export default function HomePage() {
             </div>
           </div>
         </Reveal>
+      </section>
+
+      {/* ── See the app ── */}
+      <section id="app" className="shell scroll-mt-24 py-20 sm:py-24">
+        <Reveal>
+          <SectionHeading
+            eyebrow="See the app"
+            title="Made for one-tap fun"
+            intro="No timelines, no menus — just your photo, a mood, and a clip ready to send."
+          />
+        </Reveal>
+        <div className="mt-12 flex flex-wrap items-start justify-center gap-10 sm:gap-14">
+          {appShots.map((shot, i) => (
+            <Reveal key={shot.src} delay={i * 90}>
+              <AppShot {...shot} />
+            </Reveal>
+          ))}
+        </div>
       </section>
 
       {/* ── Sample clips ── */}
