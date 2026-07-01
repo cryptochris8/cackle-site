@@ -19,8 +19,8 @@ export const site = {
 // Anything left as "#" renders as a button that doesn't navigate yet.
 export const links = {
   appStore: "#", // TODO: App Store / TestFlight public link once live
-  tiktok: "https://www.tiktok.com/@cackleapp",
-  instagram: "https://www.instagram.com/cackleapp",
+  tiktok: "#", // TODO: create @cackleapp on TikTok, then restore the URL
+  instagram: "#", // TODO: create @cackleapp on Instagram, then restore the URL
   youtube: "#", // TODO
   x: "https://x.com/cackleapp",
   email: "hello@cackleapp.com", // TODO: confirm address
