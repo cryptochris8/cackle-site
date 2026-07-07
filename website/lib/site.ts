@@ -18,7 +18,7 @@ export const site = {
 // ─── External links — fill these in with the real URLs ───
 // Anything left as "#" renders as a button that doesn't navigate yet.
 export const links = {
-  appStore: "#", // TODO: App Store / TestFlight public link once live
+  appStore: "https://apps.apple.com/us/app/cackle-funny-photo-clips/id6784446520", // LIVE 2026-07-06
   tiktok: "#", // TODO: create @cackleapp on TikTok, then restore the URL
   instagram: "#", // TODO: create @cackleapp on Instagram, then restore the URL
   youtube: "#", // TODO
